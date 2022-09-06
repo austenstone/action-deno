@@ -18,4 +18,4 @@ ADD ./src ./src
 # Compile the main app so that it doesn't need to be compiled each startup/entry.
 RUN deno cache src/index.ts
 
-CMD ["run", "--allow-net", "--allow-env", "src/index.ts"]
+CMD ["run", "--allow-net", "--allow-env", "--allow-read", "--allow-write", "src/index.ts"]

@@ -1,1 +1,5 @@
-console.log(Deno.env.toObject());
+import { Context } from "./context.ts";
+
+const context = new Context();
+
+console.log({context})
