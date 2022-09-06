@@ -1,3 +1,1 @@
-import run from './run';
-
-run();
+console.log(Deno.env.toObject());
